@@ -1,0 +1,105 @@
+.desc {
+  width: 1920px;
+  height: 860px;
+  background-image: url("../img/bg-desktop.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    width: 100%;
+    height: 344px;
+    background-image: url("../img/bg-tablet.jpg");
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    width: 100%;
+    height: 235px;
+    padding-bottom: 165px;
+    margin-bottom: 108px;
+    background-image: url("../img/bg-mobile.jpg");
+  }
+}
+
+.desc__wrapper {
+  padding: 185px 433px 516px 1075px;
+  color: #FFFFFF;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding: 60px 185px 83px;
+    text-align: center;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding: 0;
+    padding-top: 81px;
+    padding-right: 10px;
+    padding-left: 16px;
+    text-align: center;
+  }
+}
+
+.desc__title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-bottom: 102px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.desc__text {
+  margin: 0;
+  padding-bottom: 39px;
+  padding-right: 18px;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding-bottom: 15px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-bottom: 20px;
+    padding-right: 0;
+    color: #2C2E3F;
+  }
+}
+
+.desc__btn {
+  position: relative;
+  box-sizing: border-box;
+  width: 340px;
+  background-color: #fe7865;
+}
+
+.desc__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.desc__icon {
+  position: absolute;
+  right: 31px;
+  top: 30px;
+}

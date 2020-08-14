@@ -1,0 +1,13 @@
+.main-menu {
+  display: flex;
+  padding: 0;
+  padding-right: 53px;
+  list-style: none;
+}
+
+.main-menu__link {
+  padding-left: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
