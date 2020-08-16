@@ -13,37 +13,45 @@
     <header class="main-header">
       <a class="main-header__logo">
         <!--Лого для всех версий!!!-->
-        <img class="main-header__logo-image" src="img/logo-desktop.svg">
+        <img class="main-header__logo-image" src="img/logo-desktop.svg" alt="Логотип">
       </a>
       <nav class="main-nav">
-        <!--<button class="main-nav__btn" type="button"></button>-->
-        <ul class="main-nav__menu main-menu">
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__icon-opened" width="30" height="30" aria-hidden="true" focusable="false">
+            <use xlink:href="img/sprite.svg#open-menu"></use>
+          </svg>
+          <svg class="main-nav__icon-closed main-nav__icon--close" width="24" height="25" aria-hidden="true" focusable="false">
+            <use xlink:href="img/sprite.svg#close-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="main-nav__menu main-menu main-menu--close ">
           <!--не забыть про меню в мобильной и планшете-->
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">О путешествии</a>
+            <a class="main-menu__link" href="#places">О путешествии</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Цены</a>
+            <a class="main-menu__link" href="#prices">Цены</a>
           </li>
         </ul>
-        <div class="main-nav__tel tel">
-          <svg class="tel__icon" width="30" height="30" aria-hidden="true" focusable="false">
+        <div class="main-nav__phone phone">
+          <svg class="phone__icon" width="30" height="30" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
-          <a class="tel__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a class="phone__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
       </nav>
     </header>
     <main class="main">
       <div class="main__desc desc">
         <div class="desc__wrapper">
-          <h2 class="desc__title">Путешествие по Европе</h3>
+          <h2 class="desc__title">Путешествие по Европе</h2>
             <!--подумать над заголовком h1-->
             <p class="desc__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
               потрясающая красота
               природы.</p>
             <div class="desc__btn">
-              <a class="desc__link" href="#">смотреть тур</a>
+              <a class="desc__link" href="#countries">смотреть тур</a>
               <svg class="desc__icon" width="14" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#arrow-right"></use>
               </svg>
@@ -53,7 +61,7 @@
       <div class="main__wrapper">
         <section class="main__places places">
           <div class="places__desc">
-            <h2 class="places__title">Места посещения</h3>
+            <h2 class="places__title" id="places">Места посещения</h2>
               <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           </div>
           <ul class="places__list">
@@ -139,7 +147,7 @@
             </li>
           </ul>
         </section>
-        <div class="main__buttons country-btns">
+        <div class="main__buttons country-btns" id="countries">
           <button class="country-btns__btn" type="button">Греция</button>
           <button class="country-btns__btn" type="button">Албания</button>
           <button class="country-btns__btn" type="button">Македония</button>
@@ -336,7 +344,7 @@
             </div>
           </div>
         </section>
-        <section class="main__price price">
+        <section class="main__price price"  id="prices">
           <div class="price__wrapper">
             <div class="price__desc">
               <h2 class="price__title">Цены</h2>
@@ -346,11 +354,11 @@
             </div>
             <div class="price__contact contact">
               <p class="contact__text">Свяжитесь с нами</p>
-              <div class="contact__tel">
+              <div class="contact__phone">
                 <svg class="contact__icon" width="30" height="30" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
-                <a class="contact__tel-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+                <a class="contact__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
               </div>
             </div>
           </div>
@@ -389,25 +397,11 @@
           </div>
         </section>
         <section class="main__connect form">
-          <!--<div class="form__bg">
-            <picture>
-              <source type="image/webp" media="(min-width: 1024px)"
-                srcset="img/form-bg-desktop@1x.webp 1x, img/form-bg-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/form-bg-tablet@1x.webp 1x, img/form-bg-tablet@2x.webp 2x">
-              <source media="(min-width: 1024px)"
-                srcset="img/form-bg-desktop@1x.jpg 1x, img/form-bg-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/form-bg-tablet@1x.jpg 1x, img/form-bg-tablet@2x.jpg 2x">
-              <img src="img/form-bg-desktop@1x.jpg" srcset="img/form-bg-desktop@2x.jpg 2x"
-                alt="Закат">
-            </picture>
-          </div>-->
           <div class="form__desc">
             <p class="form__title">У Вас остались вопросы?</p>
             <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="form__input">
-              <input class="form__tel" type="tel" value="Введите 10 цифр номера" required>
+              <input class="form__phone" type="tel" value="Введите 10 цифр номера" required>
               <!--разобраться с +7 в макете-->
               <input class="form__mail" type="email" id="mail" value="E-mail" required>
             </div>
@@ -417,6 +411,7 @@
       </div>
     </main>
     <footer class="main-footer">
+      <div class="main-footer__wrapper">
       <div class="main-footer__plans plans">
         <p class="plans__title">Следующие путешествия</p>
         <ul class="plans__list">
@@ -435,18 +430,23 @@
           <li class="plans__item">Пальма</li>
           <li class="plans__item">Рим</li>
           <li class="plans__item">Гренобль</li>
-        </ul>
+         </ul>
       </div>
       <div class="main-footer__contacts contacts">
         <p class="contacts__title">Наши контакты</p>
-        <div class="contacts__tel">
-          <svg width="26" height="34"></svg>
-          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
-        </div>
         <div class="contacts__mail">
-          <svg width="26" height="34"></svg>
-          <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <svg class="contacts__mail-icon" width="26" height="20" aria-hidden="true" focusable="false">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <a  class="contacts__link contacts__link--font" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         </div>
+        <div class="contacts__phone">
+          <svg class="contacts__phone-icon" width="30" height="30" aria-hidden="true" focusable="false">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <a class="contacts__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+
       </div>
       <div class="main-footer__offer offer">
         <p class="offer__title">Корпоративные путешествия</p>
@@ -454,8 +454,10 @@
           очень сближают компанию,
           помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
       </div>
+    </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

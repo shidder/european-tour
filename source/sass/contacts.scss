@@ -1,0 +1,45 @@
+.contacts {
+  width: 33.3%;
+  padding-left: 90px;
+  box-sizing: border-box;
+  border-right: 1px solid #D7D9DF;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    flex-grow: 2;
+    border: none;
+    padding-left: 50px;
+   }
+
+   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+     padding: 0;
+    border: none;
+    border-bottom: 1px solid #D7D9DF;
+    width: 100%;
+
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  font-weight: 600;
+font-size: 18px;
+line-height: 32px;
+color: #141517;
+padding-bottom: 21px;
+}
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fe7865;
+
+  &--font {
+    font-size: 16px;
+  line-height: 32px;
+  }
+}
+
+.contacts__phone-icon {
+  stroke: #d7d9df;
+  stroke-width: 2;
+}

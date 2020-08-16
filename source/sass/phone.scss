@@ -1,0 +1,19 @@
+.phone {
+  display: flex;
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
+    display: none;
+  }
+}
+
+.phone__link {
+  font-size: 18px;
+line-height: 32px;
+text-align: center;
+text-decoration-line: underline;
+color: #fe7865;
+}
+
+.phone__icon {
+  stroke: #fe8978;
+  stroke-width: 2;
+}

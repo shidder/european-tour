@@ -2,12 +2,36 @@
   display: flex;
   align-items: center;
   list-style: none;
+}
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+.main-nav__toggle {
+  display: none;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
+    position: absolute;
+    right: 0;
+display: block;
+width: 50px;
+height: 50px;
+background-color: #fe7865;
+border: none;
+   }
+}
+
+.main-nav__icon-opened,
+.main-nav__icon-closed {
+  position: absolute;
+  top: 25%;
+    left: 25%;
+
+}
+
+.main-nav__icon {
+  &--close {
     display: none;
   }
 
-  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
-    display: none;
+  &--open {
+    display: block;
   }
 }

@@ -9,6 +9,7 @@
   padding-right: 386px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    position: relative;
     padding-left: 16px;
     padding-top: 18px;
     padding-bottom: 14px;
@@ -16,9 +17,10 @@
   }
 
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    position: relative;
     padding-left: 21px;
     padding-top: 18px;
     padding-bottom: 14px;
-    padding-right: 703px;
+    padding-right: 210px;
   }
 }

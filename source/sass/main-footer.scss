@@ -1,0 +1,16 @@
+.main-footer__wrapper {
+  padding-left: 381px;
+  padding-right: 381px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding: 0;
+    flex-wrap: wrap;
+   }
+
+   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding: 0;
+flex-direction: column;
+  }
+}
