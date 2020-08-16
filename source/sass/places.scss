@@ -1,0 +1,137 @@
+.places {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding: 0;
+    text-align: center;
+
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.places__desc {
+  padding-right: 759px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding: 0;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding: 0;
+  }
+}
+
+.places__title {
+  margin: 0;
+  padding-bottom: 68px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.places__text {
+  margin: 0;
+  padding-bottom: 56px;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding-left: 195px;
+    padding-right: 195px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding: 0;
+  }
+}
+
+.places__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    margin: 0;
+    justify-content: center;
+    padding-bottom: 98px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    justify-content: center;
+  }
+}
+
+.places__item {
+  position: relative;
+  padding-bottom: 101px;
+
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding: 0;
+    padding-bottom: 19px;
+
+    &:nth-child(odd) {
+      padding-right: 29px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-right: 0;
+    padding-bottom: 35px;
+  }
+}
+
+.places__name {
+  display: block;
+  position: absolute;
+  left: 68px;
+  bottom: 104px;
+  width: 215px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+  color: #2C2E3F;
+
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    left: 34px;
+    bottom: 23px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    left: 34px;
+    bottom: 39px;
+    padding-top: 27px;
+    padding-bottom: 5px;
+  }
+}

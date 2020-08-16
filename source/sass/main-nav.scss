@@ -2,4 +2,12 @@
   display: flex;
   align-items: center;
   list-style: none;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    display: none;
+  }
 }

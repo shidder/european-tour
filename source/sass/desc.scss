@@ -1,13 +1,25 @@
 .desc {
   width: 1920px;
   height: 860px;
-  background-image: url("../img/bg-desktop.jpg");
+  padding-bottom: 195px;
+  background-image: url("../img/bg-desktop@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-desktop@2x.jpg");
+    background-size: 3840px 1720px;
+  }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     width: 100%;
     height: 344px;
-    background-image: url("../img/bg-tablet.jpg");
+    padding-bottom: 80px;
+    background-image: url("../img/bg-tablet@1x.jpg");
+
+   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-tablet@2x.jpg");
+      background-size: 1536px;
+    }
   }
 
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
@@ -15,12 +27,17 @@
     height: 235px;
     padding-bottom: 165px;
     margin-bottom: 108px;
-    background-image: url("../img/bg-mobile.jpg");
+    background-image: url("../img/bg-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-mobile@2x.jpg");
+      background-size: 640px;
+    }
   }
 }
 
 .desc__wrapper {
-  padding: 185px 433px 516px 1075px;
+  padding: 185px 433px 0 1075px;
   color: #FFFFFF;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
@@ -82,6 +99,18 @@
   box-sizing: border-box;
   width: 340px;
   background-color: #fe7865;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .desc__link {
@@ -96,10 +125,32 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth)  {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    text-align: left;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    text-align: left;
+  }
 }
 
 .desc__icon {
   position: absolute;
-  right: 31px;
   top: 30px;
+  right: 31px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth)  {
+    top: 20px;
+    right: 40px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    top: 20px;
+    right: 40px;
+  }
 }

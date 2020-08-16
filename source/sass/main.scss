@@ -1,1 +1,13 @@
 
+.main__wrapper {
+  padding-left: 381px;
+  padding-right: 381px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding: 0;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding: 0;
+  }
+}

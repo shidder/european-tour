@@ -7,4 +7,18 @@
   padding-bottom: 31px;
   padding-left: 375px;
   padding-right: 386px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    padding-left: 16px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-right: 260px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-left: 21px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-right: 703px;
+  }
 }

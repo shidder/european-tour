@@ -1,0 +1,111 @@
+.reviews {
+  width: 382px;
+  z-index: 4;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    width: 228px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  color: #2C2E3F;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  padding-bottom: 35px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-bottom: 68px;
+  }
+}
+
+.reviews__name {
+  position: relative;
+  padding-left: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.466667px;
+  color: #2C2E3F;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 64px;
+    height: 82px;
+    background-repeat: no-repeat;
+  }
+
+  &--greece {
+    &::before {
+      background-image: url("../img/review-greece.png");
+    }
+  }
+
+  &--albania {
+    &::before {
+      background-image: url("../img/review-albania.png");
+    }
+  }
+
+  &--macedonia {
+    &::before {
+      background-image: url("../img/review-macedonia.png");
+    }
+  }
+
+  &--montenegro {
+    &::before {
+      background-image: url("../img/review-montenegro.png");
+    }
+  }
+
+  &--croatia {
+    &::before {
+      background-image: url("../img/review-croatia.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+padding-bottom: 30px;
+   }
+
+   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-bottom: 30px;}
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    padding-left: 0;
+    margin: 0;
+
+    &::before {
+      top: -56px;
+      left: 65px;
+    }
+  }
+}

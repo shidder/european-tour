@@ -1,0 +1,75 @@
+.form {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 455px;
+  background-image: url("../img/form-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/form-bg-desktop@2x.jpg");
+    background-size: 1688px 910px;
+  }
+}
+
+.form__desc {
+  text-align: center;
+  padding: 50px 49px 49px 50px;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px rgba(41, 54, 66, 0.1);
+border-radius: 5px;
+}
+
+.form__title {
+  margin: 0;
+  font-weight: 600;
+font-size: 25px;
+line-height: 32px;
+padding-bottom: 15px;
+}
+
+.form__text {
+  margin: 0;
+font-size: 16px;
+line-height: 24px;
+padding-bottom: 24px;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+}
+
+.form__tel,
+.form__mail {
+  font-size: 14px;
+line-height: 17px;
+padding-top: 16px;
+padding-bottom: 15px;
+min-width: 269px;
+box-sizing: border-box;
+}
+
+.form__mail {
+  padding-left: 15px;
+  margin-left: 19px;
+}
+
+.form__btn {
+  width: 176px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  border: none;
+  outline: none;
+  background-color: #fe7865;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+line-height: 15px;
+letter-spacing: 2px;
+color: #fff;
+}

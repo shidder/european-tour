@@ -1,0 +1,50 @@
+.country-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 899px;
+  margin-bottom: 80px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    width: 730px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 40px;
+    width: 305px;
+    margin-bottom: 24px;
+  }
+}
+
+.country-btns__btn {
+  display: block;
+  padding-left: 0;
+  padding-bottom: 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: rgba(44, 46, 63, 0.3);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+    display: none;
+
+  &:first-child,
+  &:nth-child(2) {
+    display: block;
+  }
+}
+}
