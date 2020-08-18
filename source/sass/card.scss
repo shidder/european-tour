@@ -3,7 +3,7 @@
   margin-bottom: 236px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
-    margin-bottom: 80px;
+    margin-bottom: 193px;
   }
 
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
@@ -17,11 +17,7 @@
   bottom: -503px;
   left: -132px;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
-    display: none;
-  }
-
-  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
     display: none;
   }
 }
@@ -68,7 +64,7 @@
 
 .card__title {
   margin: 0;
-  padding-bottom: 53px;
+  padding-bottom: 48px;
   font-weight: 600;
 font-size: 55px;
 line-height: 90px;
@@ -91,7 +87,7 @@ color: #2C2E3F;
 
 .card__text {
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   font-size: 16px;
 line-height: 28px;
 letter-spacing: -0.466667px;
@@ -148,7 +144,7 @@ color: #fff;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     left: 0;
-    bottom: 60px;
+    bottom: -85px;
    }
 
    @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {

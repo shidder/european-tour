@@ -1,6 +1,7 @@
 .plans {
   width: 33.3%;
   box-sizing: border-box;
+  padding-left: 7px;
   border-right: 1px solid #D7D9DF;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
@@ -18,6 +19,7 @@
 
 .plans__title {
   margin: 0;
+  padding-bottom: 3px;
   font-weight: 600;
 font-size: 18px;
 line-height: 32px;
@@ -30,16 +32,10 @@ color: #141517;
   display: flex;
   flex-wrap: wrap;
    padding-left: 0;
-
-   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
-
-   }
-
 }
 
 .plans__item {
-  min-width: 108px;
-  padding-right: 10px;
+  width: 33.3%;
   padding-bottom: 10px;
   box-sizing: border-box;
 
@@ -48,7 +44,6 @@ color: #141517;
     &:nth-child(3n) {
       order: 1;
     }
-
 
    text-align: center;
    }

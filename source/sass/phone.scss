@@ -1,7 +1,8 @@
 .phone {
   display: flex;
+  position: relative;
   @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
-    display: none;
+  display: none;
   }
 }
 
@@ -16,4 +17,8 @@ color: #fe7865;
 .phone__icon {
   stroke: #fe8978;
   stroke-width: 2;
+  position: absolute;
+  /* right: 0; */
+  left: -43px;
 }
+

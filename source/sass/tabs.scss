@@ -1,8 +1,8 @@
-.country-btns {
+.tabs {
   display: flex;
   justify-content: space-between;
   width: 899px;
-  margin-bottom: 80px;
+  margin-bottom: 91px;
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
@@ -19,10 +19,10 @@
   }
 }
 
-.country-btns__btn {
+.tabs__btn {
   display: block;
   padding-left: 0;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
   border: none;
   outline: none;
   background-color: transparent;

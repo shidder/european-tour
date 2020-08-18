@@ -4,17 +4,11 @@
   align-items: flex-end;
   padding-right: 41px;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
     padding: 0;
     text-align: center;
     align-items: center;
    }
-
-   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
-    padding: 0;
-    text-align: center;
-    align-items: center;
-  }
 }
 
 .contact__text {

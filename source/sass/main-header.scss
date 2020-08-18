@@ -1,7 +1,8 @@
 .main-header {
+  position: relative;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 36px;
   padding-bottom: 31px;
@@ -23,4 +24,10 @@
     padding-bottom: 14px;
     padding-right: 210px;
   }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 39%;
+  left: 376px;
 }

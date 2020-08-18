@@ -1,7 +1,8 @@
 .main-menu {
   display: flex;
+  margin: 0;
   padding: 0;
-  padding-right: 53px;
+  padding-right: 96px;
   list-style: none;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
@@ -16,12 +17,11 @@
   }
 }
 
-
-
 .main-menu__link {
   padding-left: 40px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #141517;
+  text-decoration: none;
 }

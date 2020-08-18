@@ -34,13 +34,14 @@
             <a class="main-menu__link" href="#prices">Цены</a>
           </li>
         </ul>
+      </nav>
         <div class="main-nav__phone phone">
           <svg class="phone__icon" width="30" height="30" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
           <a class="phone__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
-      </nav>
+
     </header>
     <main class="main">
       <div class="main__desc desc">
@@ -147,19 +148,19 @@
             </li>
           </ul>
         </section>
-        <div class="main__buttons country-btns" id="countries">
-          <button class="country-btns__btn" type="button">Греция</button>
-          <button class="country-btns__btn" type="button">Албания</button>
-          <button class="country-btns__btn" type="button">Македония</button>
-          <button class="country-btns__btn" type="button">Черногория</button>
-          <button class="country-btns__btn" type="button">Хорватия</button>
+        <div class="main__buttons tabs" id="countries">
+          <button class="tabs__btn" id="greece-btn" type="button">Греция</button>
+          <button class="tabs__btn" id="albania-btn" type="button">Албания</button>
+          <button class="tabs__btn" id="macedonia-btn" type="button">Македония</button>
+          <button class="tabs__btn" id="montenegro-btn" type="button">Черногория</button>
+          <button class="tabs__btn" id="croatia-btn" type="button">Хорватия</button>
         </div>
         <!--верно позиционировать-->
         <section class="main__info card">
           <svg class="card__map" width="1444" height="1089" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#map"></use>
           </svg>
-          <div class="card__wrapper">
+          <div class="card__wrapper" id="greece-card">
             <div class="card__desc">
               <h2 class="card__title">Греция</h2>
               <p class="card__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
@@ -199,7 +200,7 @@
               <p class="reviews__name reviews__name--greece">Влада Голицина</p>
             </div>
           </div>
-          <div class="card__wrapper card__wrapper--hidden">
+          <div class="card__wrapper card__wrapper--hidden" id="albania-card">
             <div class="card__desc">
               <h2 class="card__title">Албания</h2>
               <p class="card__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
@@ -235,7 +236,7 @@
                 <p class="reviews__name reviews__name--albania">Маришка</p>
             </div>
           </div>
-          <div class="card__wrapper card__wrapper--hidden">
+          <div class="card__wrapper card__wrapper--hidden" id="macedonia-card">
             <div class="card__desc">
               <h2 class="card__title">Македония</h2>
               <p class="card__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно
@@ -271,7 +272,7 @@
                 <p class="reviews__name reviews__name--macedonia">Михаил Кузьмин</p>
             </div>
           </div>
-          <div class="card__wrapper card__wrapper--hidden">
+          <div class="card__wrapper card__wrapper--hidden" id="montenegro-card">
             <div class="card__desc">
               <h2 class="card__title">Черногория</h2>
               <p class="card__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых
@@ -305,7 +306,7 @@
                <p class="reviews__name reviews__name--montenegro">Анастасия Мей</p>
             </div>
           </div>
-          <div class="card__wrapper card__wrapper--hidden">
+          <div class="card__wrapper card__wrapper--hidden" id="croatia-card">
             <div class="card__desc">
               <h2 class="card__title">Хорватия</h2>
               <p class="card__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
@@ -388,7 +389,7 @@
               <p class="tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
             </div>
             <ul class="tariff__list tariff__list--marked">
-              <li class="tariff__item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__item tariff__item--marked">Разработанный маршрут с гидом группы</li>
               <li class="tariff__item">Перелет, трансфер и проживание в отелях</li>
               <li class="tariff__item">Завтраки, ужины в отелях и ланчи на природе</li>
               <li class="tariff__item">Экскурсии по удивительно красивым местам Европы</li>
@@ -401,7 +402,7 @@
             <p class="form__title">У Вас остались вопросы?</p>
             <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="form__input">
-              <input class="form__phone" type="tel" value="Введите 10 цифр номера" required>
+              <input class="form__phone" type="tel" name="phone-number" placeholder="+7 Введите 10 цифр номера" required>
               <!--разобраться с +7 в макете-->
               <input class="form__mail" type="email" id="mail" value="E-mail" required>
             </div>
@@ -438,13 +439,13 @@
           <svg class="contacts__mail-icon" width="26" height="20" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#mail"></use>
           </svg>
-          <a  class="contacts__link contacts__link--font" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a  class="contacts__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         </div>
         <div class="contacts__phone">
           <svg class="contacts__phone-icon" width="30" height="30" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
-          <a class="contacts__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a class="contacts__link contacts__link--font" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
 
       </div>
@@ -457,7 +458,9 @@
     </div>
     </footer>
   </div>
+  <script src="js/tabs.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

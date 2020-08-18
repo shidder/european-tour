@@ -2,13 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
-    padding: 0;
-    text-align: center;
-
-  }
-
-  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
     padding: 0;
     text-align: center;
   }
@@ -17,21 +11,18 @@
 .places__desc {
   padding-right: 759px;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
-    padding: 0;
-  }
-
-  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
     padding: 0;
   }
 }
 
 .places__title {
   margin: 0;
-  padding-bottom: 68px;
+  padding-bottom: 65px;
   font-size: 55px;
   font-weight: 600;
   line-height: 80px;
+  letter-spacing: -0.466667px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     padding-bottom: 20px;
@@ -48,7 +39,8 @@
 
 .places__text {
   margin: 0;
-  padding-bottom: 56px;
+  padding-right: 11px;
+  padding-bottom: 54px;
   font-size: 16px;
   line-height: 28px;
   color: rgba(44, 46, 63, 0.7);
@@ -66,6 +58,7 @@
 
 .places__list {
   padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +67,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     margin: 0;
     justify-content: center;
-    padding-bottom: 98px;
+    padding-bottom: 83px;
   }
 
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
@@ -84,7 +77,7 @@
 
 .places__item {
   position: relative;
-  padding-bottom: 101px;
+  padding-bottom: 97px;
 
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
@@ -110,7 +103,7 @@
   display: block;
   position: absolute;
   left: 68px;
-  bottom: 104px;
+  bottom: 101px;
   width: 215px;
   padding-top: 17px;
   padding-bottom: 16px;
@@ -124,8 +117,8 @@ line-height: 29px;
 
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
-    left: 34px;
-    bottom: 23px;
+    left: 36px;
+    bottom: 20px;
   }
 
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
