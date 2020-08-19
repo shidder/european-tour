@@ -4,16 +4,18 @@
   padding-left: 7px;
   border-right: 1px solid #D7D9DF;
 
-    @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     flex-grow: 3;
     padding-left: 21px;
-   }
+    margin-bottom: 32px;
+  }
 
-   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
     border: none;
     border-bottom: 1px solid #D7D9DF;
     width: 100%;
-
+    text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -21,9 +23,9 @@
   margin: 0;
   padding-bottom: 3px;
   font-weight: 600;
-font-size: 18px;
-line-height: 32px;
-color: #141517;
+  font-size: 18px;
+  line-height: 32px;
+  color: #141517;
 }
 
 .plans__list {
@@ -31,7 +33,7 @@ color: #141517;
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
-   padding-left: 0;
+  padding-left: 0;
 }
 
 .plans__item {
@@ -39,12 +41,11 @@ color: #141517;
   padding-bottom: 10px;
   box-sizing: border-box;
 
-
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
     &:nth-child(3n) {
       order: 1;
     }
 
-   text-align: center;
-   }
+    text-align: center;
+  }
 }

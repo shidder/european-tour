@@ -1,11 +1,13 @@
 .desc {
   width: 1920px;
   height: 860px;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
   background-image: url("../img/bg-desktop@1x.jpg");
+  background-color: #5b768f;
   background-repeat: no-repeat;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-desktop@2x.jpg");
     background-size: 3840px 1720px;
   }
@@ -13,10 +15,11 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     width: 100%;
     height: 344px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     background-image: url("../img/bg-tablet@1x.jpg");
 
-   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-tablet@2x.jpg");
       background-size: 1536px;
     }
@@ -25,11 +28,11 @@
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
     width: 100%;
     height: 235px;
-    padding-bottom: 165px;
-    margin-bottom: 108px;
+    margin-bottom: 307px;
     background-image: url("../img/bg-mobile@1x.jpg");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-mobile@2x.jpg");
       background-size: 640px;
     }
@@ -82,7 +85,6 @@
   line-height: 27px;
   letter-spacing: -0.466667px;
 
-
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     padding-bottom: 10px;
     padding-right: 0;
@@ -127,7 +129,7 @@
   text-decoration: none;
   color: #ffffff;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth)  {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
     padding-top: 18px;
     padding-bottom: 18px;
     text-align: left;
@@ -139,7 +141,7 @@
   top: 30px;
   right: 39px;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth)  {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
     top: 20px;
     right: 40px;
   }

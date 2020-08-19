@@ -31,3 +31,10 @@
   top: 39%;
   left: 376px;
 }
+
+.main-header__logo-img {
+  @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
+    width: 44px;
+    height: 17px;
+  }
+}

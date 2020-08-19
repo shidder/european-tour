@@ -6,11 +6,13 @@
   list-style: none;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
-   position: absolute;
-   right: 55px;
+    position: absolute;
+    right: 55px;
+
     &--close {
-    display: none;
-  }
+      display: none;
+    }
+
     &--open {
       display: block;
     }

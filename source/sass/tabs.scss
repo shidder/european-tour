@@ -42,9 +42,9 @@
   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
     display: none;
 
-  &:first-child,
-  &:nth-child(2) {
-    display: block;
+    &:first-child,
+    &:nth-child(2) {
+      display: block;
+    }
   }
-}
 }

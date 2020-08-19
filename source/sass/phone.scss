@@ -1,17 +1,18 @@
 .phone {
   display: flex;
   position: relative;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-maxwidth) {
-  display: none;
+    display: none;
   }
 }
 
 .phone__link {
   font-size: 18px;
-line-height: 32px;
-text-align: center;
-text-decoration-line: underline;
-color: #fe7865;
+  line-height: 32px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #fe7865;
 }
 
 .phone__icon {
@@ -21,4 +22,3 @@ color: #fe7865;
   /* right: 0; */
   left: -43px;
 }
-

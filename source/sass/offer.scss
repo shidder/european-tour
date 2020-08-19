@@ -5,10 +5,11 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
     width: 100%;
+    padding-left: 16px;
     text-align: center;
-   }
+  }
 
-   @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
+  @media (min-width: $mobile-width) and (max-width: $mobile-maxwidth) {
     padding: 0;
     width: 100%;
     text-align: center;
@@ -18,10 +19,10 @@
 .offer__title {
   margin: 0;
   font-weight: 600;
-font-size: 18px;
-line-height: 32px;
-color: #141517;
-padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #141517;
+  padding-bottom: 20px;
 }
 
 .offer__text {
